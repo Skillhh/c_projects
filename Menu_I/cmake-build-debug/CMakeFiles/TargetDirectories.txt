@@ -1,0 +1,3 @@
+/mnt/Documents/ProgramacionC/Menu_I/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/Documents/ProgramacionC/Menu_I/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/Documents/ProgramacionC/Menu_I/cmake-build-debug/CMakeFiles/Menu_I.dir

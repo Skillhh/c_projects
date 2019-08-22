@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/uso_printf.dir/main.c.o  -o uso_printf 

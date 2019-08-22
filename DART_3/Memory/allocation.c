@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int * allocateIntArray(int);
+double findAverage(int *, int );
+
+
+int main(){
+    int num, i;
+    int * array;
+    double average;
+
+    printf("How many grade would you like to enter? ");
+    scanf("%d", &num);
+    
+    //funcion para reserver memoria 
+    array = allocateIntArray(num);
+    
+    //Almacenando numeros
+    printf("Please enter %d grades: ", num);
+    for( i = 0; i < num; i++){
+        scanf("%d", array+i);
+    }
+    
+    average = findAverage(array, num);
+    printf("The average grae is %.2f \n", average);
+    
+    free(array);
+    
+    return 0;
+
+}
+int * allocateIntArray(int num){
+    
+    int * ptr = ( int * ) malloc( num * sizeof(int));
+    
+    return ptr;
+} 
+double findAverage( int * array, int num ){
+    
+    int i;
+    double average = 0.0;
+    
+    for( i = 0; i < num; i++ ){
+        average += array[i];
+    }
+    
+    average = average / num;
+    
+    return average;
+}

@@ -1,0 +1,3 @@
+/mnt/Documents/ProgramacionC/ControlContinue_II/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/Documents/ProgramacionC/ControlContinue_II/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/Documents/ProgramacionC/ControlContinue_II/cmake-build-debug/CMakeFiles/ControlContinue_II.dir

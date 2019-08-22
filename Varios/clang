@@ -1,0 +1,52 @@
+#!/bin/bash
+# Compilador de c para crear .exe
+# Autor: Giovanny Ortegon
+# Fecha: 18/01/2019
+#
+#colores
+rojo="\033[31m"
+verde="\033[32m"
+amarillo="\033[33m"
+azul="\033[34m"
+reset="\033[0m"
+#funcion para Pausar
+pausar(){
+	for i in  {1..3}
+	do
+		echo -e ". \c"
+		sleep 0.5
+	done
+}
+#titulo principal
+echo -e "${azul}"
+figlet clang
+echo -e "$reset"
+#titulo
+echo -e "\n${verde} ********* Bienvenido al compilador .exe en linux **********$reset"
+echo -e "\n${verde} ********************** Autor: Skill ***********************$reset"
+echo -e "\n[${azul}*$reset] ${amarillo}Compilando \c "
+pausar
+echo -e "$reset\n"
+#separar el nombre del archivo del .c
+a="$1"
+b="${a##*/}"
+filename=${b%.*}
+#compilador
+clang $1 -o $filename
+#comprobar errores
+if [ $? -eq 0 ]
+then
+	echo -e "\n[${azul}*$reset] ${amarillo}Ejecutando \c "
+	pausar
+	echo -e "$reset"
+	var=$( pwd)
+	xterm -T "$var/$1" -e bash $filename
+	echo -e "\n\n[${azul}*$reset] ${amarillo}Proceso finalizado$reset\n"
+else
+	echo -e "\n[${amarillo}*$reset][${rojo} ********** ¡¡ Error !! **********$reset ]\n"
+fi
+#pausar y solicitar la finalizacion del programa
+echo -e "[${rojo}*$reset] ${verde}\c"
+read -n1 -p "Presione una tecla para terminar..."
+echo -e "$reset"
+exit 0

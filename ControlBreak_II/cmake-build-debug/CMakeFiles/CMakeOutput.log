@@ -1,0 +1,28 @@
+The system is: Linux - 4.18.0-kali2-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/mnt/Documents/ProgramacionC/ControlContinue_I/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/Documents/ProgramacionC/ControlContinue_I/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ea37/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ea37.dir/build.make CMakeFiles/cmTC_2ea37.dir/build
+make[1]: Entering directory '/mnt/Documents/ProgramacionC/ControlContinue_I/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ea37.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2ea37.dir/testCCompiler.c.o   -c /mnt/Documents/ProgramacionC/ControlContinue_I/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2ea37
+/usr/local/clion-2018.2.6/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ea37.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2ea37.dir/testCCompiler.c.o  -o cmTC_2ea37 
+make[1]: Leaving directory '/mnt/Documents/ProgramacionC/ControlContinue_I/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
